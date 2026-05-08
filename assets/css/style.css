@@ -1,0 +1,388 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+button,
+.btn {
+  transition: all 0.3s ease;
+}
+
+button:active,
+.btn:active {
+  transform: scale(0.9);
+}
+
+/* job_seeker_register */
+.job_seeker_register .form-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 94px 0px #00000021;
+}
+
+.job_seeker_register .form-container label {
+  font-size: 0.8em;
+}
+
+.job_seeker_register .form-container ::placeholder {
+  font-size: 0.6em;
+  color: #ababab;
+}
+
+.job_seeker_register .form-container .text-primary:hover {
+  color: #0d6efd !important;
+}
+
+.job_seeker_register .form-group {
+  margin-bottom: 20px;
+}
+
+.job_seeker_register .form-container button {
+  background-color: #7f56d9;
+  color: white;
+  font-size: 0.8em;
+}
+
+.job_seeker_register .form-container button:active {
+  transform: scale(.9);
+}
+
+.job_seeker_register .form-container button:hover {
+  border-color: #7f56d9;
+  background: #ffffff4d;
+  color: #462f77;
+  box-shadow: 0px 4px 84px 0px #0000001F;
+}
+
+.job_seeker_register .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  .job_seeker_register {
+    background-color: #7f56d9;
+    height: 100vh;
+  }
+
+  .job_seeker_register .d-flex {
+    align-items: center !important;
+  }
+
+  .job_seeker_register .image-container {
+    display: none;
+  }
+
+  .job_seeker_register .form-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* employer_login  */
+.employer_login .form-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 94px 0px #00000021;
+}
+
+.employer_login .form-container label {
+  font-size: 0.8em;
+}
+
+.employer_login .form-container ::placeholder {
+  font-size: 0.6em;
+  color: #ababab;
+}
+
+.employer_login .form-container .text-primary:hover {
+  color: #0d6efd !important;
+}
+
+.employer_login .form-group {
+  margin-bottom: 20px;
+}
+
+.employer_login .form-container button {
+  background-color: #7f56d9;
+  color: white;
+  font-size: 0.8em;
+}
+
+.employer_login .form-container button:active {
+  transform: scale(.9);
+}
+
+.employer_login .form-container button:hover {
+  border-color: #7f56d9;
+  background: #ffffff4d;
+  color: #462f77;
+  box-shadow: 0px 4px 84px 0px #0000001F;
+}
+
+.employer_login .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  .employer_login {
+    background-color: #7f56d9;
+    height: 100vh;
+  }
+
+  .employer_login .d-flex {
+    align-items: center !important;
+  }
+
+  .employer_login .image-container {
+    display: none;
+  }
+
+  .employer_login .form-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* employer_register */
+.employer_register .form-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 94px 0px #00000021;
+}
+
+.employer_register .form-container label {
+  font-size: 0.8em;
+}
+
+.employer_register .form-container ::placeholder {
+  font-size: 0.6em;
+  color: #ababab;
+}
+
+.employer_register .form-container .text-primary:hover {
+  color: #0d6efd !important;
+}
+
+.employer_register .form-group {
+  margin-bottom: 20px;
+}
+
+.employer_register .form-container button {
+  background-color: #7f56d9;
+  color: white;
+  font-size: 0.8em;
+}
+
+.employer_register .form-container button:active {
+  transform: scale(.9);
+}
+
+.employer_register .form-container button:hover {
+  border-color: #7f56d9;
+  background: #ffffff4d;
+  color: #462f77;
+  box-shadow: 0px 4px 84px 0px #0000001F;
+}
+
+.employer_register .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  .employer_register {
+    background-color: #7f56d9;
+    height: 100vh;
+  }
+
+  .employer_register .d-flex {
+    align-items: center !important;
+  }
+
+  .employer_register .image-container {
+    display: none;
+  }
+
+  .employer_register .form-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* job_seeker_login */
+.job_seeker_login .form-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 94px 0px #00000021;
+}
+
+.job_seeker_login .form-container label {
+  font-size: 0.8em;
+}
+
+.job_seeker_login .form-container ::placeholder {
+  font-size: 0.6em;
+  color: #ababab;
+}
+
+.job_seeker_login .form-container .text-primary:hover {
+  color: #0d6efd !important;
+}
+
+.job_seeker_login .form-group {
+  margin-bottom: 20px;
+}
+
+.job_seeker_login .form-container button {
+  background-color: #7f56d9;
+  color: white;
+  font-size: 0.8em;
+}
+
+.job_seeker_login .form-container button:active {
+  transform: scale(.9);
+}
+
+.job_seeker_login .form-container button:hover {
+  border-color: #7f56d9;
+  background: #ffffff4d;
+  color: #462f77;
+  box-shadow: 0px 4px 84px 0px #0000001F;
+}
+
+.job_seeker_login .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  .job_seeker_login {
+    background-color: #7f56d9;
+    height: 100vh;
+  }
+
+  .job_seeker_login .d-flex {
+    align-items: center !important;
+  }
+
+  .job_seeker_login .image-container {
+    display: none;
+  }
+
+  .job_seeker_login .form-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* reset_password */
+.reset_password .card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.05);
+}
+
+.reset_password .form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25);
+  border-color: #6366f1;
+}
+
+.reset_password .form-control {
+  font-size: 1em;
+}
+
+.reset_password .form-control::placeholder {
+  color: rgba(0, 0, 0, 0.349);
+  font-size: .8em;
+}
+
+.reset_password .btn {
+  background-color: #7F56D9;
+  color: white;
+  font-size: .9em;
+}
+
+.reset_password .btn:hover {
+  background: #ffffff4d;
+  color: #7F56D9;
+  border-color: #7F56D9;
+  box-shadow: 0px 4px 84px 0px #0000001F;
+
+}
+
+
+
+
+/* forgot_password */
+.forgot_password .card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.05);
+}
+
+.forgot_password .form-control {
+  font-size: 1em;
+}
+
+.forgot_password .form-control::placeholder {
+  color: rgba(0, 0, 0, 0.349);
+  font-size: .8em;
+}
+
+.forgot_password .form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25);
+  border-color: #6366f1;
+}
+
+.forgot_password .btn {
+  background-color: #7F56D9;
+  color: white;
+  font-size: .9em;
+}
+
+.forgot_password .btn:hover {
+  background: #ffffff4d;
+  color: #7F56D9;
+  border-color: #7F56D9;
+  box-shadow: 0px 4px 84px 0px #0000001F;
+
+}
+
+/* otp_verification */
+.otp_verification .otp-input {
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 1px solid #dee2e6;
+  background-color: #f1f5f9;
+}
+
+.otp_verification #otp-form .btn {
+  background-color: #7F56D9;
+  color: white;
+  font-size: .9em;
+}
+
+.otp_verification #otp-form .btn:hover {
+  background: #ffffff4d;
+  color: #7F56D9;
+  border-color: #7F56D9;
+  box-shadow: 0px 4px 84px 0px #0000001F;
+
+}
+
+.otp_verification .otp-input:focus {
+  background-color: #fff;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25);
+}

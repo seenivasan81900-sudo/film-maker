@@ -1,0 +1,162 @@
+<footer class="footer">
+
+  <!-- Back to top button -->
+  <div class="back-to-top" onclick="scrollToTop()">
+
+    <i class="fa-solid fa-angles-up icon"></i>
+
+  </div>
+  <!-- Back to top button -->
+  <!-- footer-links -->
+  <div class="container py-sm-2 py-3">
+    <div>
+      <div class="pt-lg-4 py-2 d-flex flex-md-row flex-column flex-wrap">
+
+        <div class="col-xl-4 col-lg-5 col-12 mx-auto my-2 my-xl-0 ">
+          <div class="d-flex align-items-start col-lg-10 col-12">
+            <img src="logo.svg" alt class="img-fluid col-md-5 col-3 me-2">
+          </div>
+          <ul class="list-inline footer-icons light-300 d-flex mt-3 pt-3 ">
+            <li class="list-inline-item me-3">
+              <a class="text-light icon" target="_blank" href="">
+                <img src="assets/images/home/fb-icon.svg" alt="">
+              </a>
+            </li>
+
+            <li class="list-inline-item mx-3">
+              <a class="text-light icon" target="_blank" href="">
+                <img src="assets/images/home/insta-icon.svg" alt="">
+              </a>
+            </li>
+
+            <li class="list-inline-item mx-3">
+              <a class="text-light icon" target="_blank" href="">
+                <img src="assets/images/home/twitter-icon.svg" alt="">
+              </a>
+            </li>
+            <li class="list-inline-item mx-3">
+              <a class="text-light icon" target="_blank" href="">
+                <img src="assets/images/home/linkedin-icon.svg" alt="">
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-xl-2 col-lg-5 col-12 mx-auto my-2 my-xl-0 ">
+          <h5 class="text-light fw-bold light-300">EXPLORE</h5>
+          <ul class="list-unstyled text-light light-300 mb-lg-5 pages">
+            <li class="py-2 links">
+              <a class="text-decoration-none text-light py-2" href="index.html">FAQ</a>
+            </li>
+            <li class="py-2 links">
+              <a class="text-decoration-none text-light py-1" href="services.html">NEWS</a>
+            </li>
+            <li class="py-2 links">
+              <a class="text-decoration-none text-light py-1" href="about.html">EVENT</a>
+            </li>
+            <li class="py-2 links">
+              <a class="text-decoration-none text-light py-1" href="contact.html">PROFESSORS</a>
+            </li>
+            <li class="py-2 links">
+              <a class="text-decoration-none text-light py-1" href="contact.html">Student Work</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="col-xl-3 col-lg-5 col-12 mx-auto my-2 my-xl-0 ps-xl-4">
+          <h5 class="text-light fw-bold light-300">OUR PROGRAMS</h5>
+          <ul class="list-unstyled text-light light-300 mb-lg-5 pages">
+
+            <li class="py-2 links">
+              <a class="text-decoration-none text-light py-2" href="index.html">BTS Métiers De L'Audiovisuel Montage
+              </a>
+            </li>
+            <li class="py-2 links">
+              <a class="text-decoration-none text-light py-1" href="services.html">European Bachelor of Arts in Cinema
+                and Audiovisual</a>
+            </li>
+            <li class="py-2 links">
+              <a class="text-decoration-none text-light py-1" href="about.html">European Master of Arts in Cinema and
+                Audiovisual</a>
+            </li>
+            <li class="py-2 links">
+              <a class="text-decoration-none text-light py-1" href="contact.html">Elite Diploma in Cinema &
+                Television</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="col-xl-2 col-lg-5 col-12 mx-auto my-2 my-lg-0 ">
+          <h5 class="text-light fw-bold light-300">Contact
+            Us</h5>
+          <ul class="list-unstyled text-light light-300 mb-lg-5 ">
+            <li class="py-2 links text-decoration-none">
+
+              <a class="text-decoration-none text-light py-1" href="mailto: ">
+                <i class="fa-solid fa-envelope me-2"></i> INFO@DBIMA.EU</a>
+            </li>
+
+            <li class="py-2 links text-decoration-none">
+              <a class="text-decoration-none text-light d-flex " href><i class="fa-solid fa-location-dot me-2 mt-1"></i>
+                <p>
+
+                  75 RUE ALEXANDRE DUMAS, 75020 PARIS,FRANCE.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <hr class="text-secondary container mx-auto my-md-3 mt-2">
+  <div>
+    <div class="w-100 copyright pb-2">
+      <div class="container">
+        <div class="d-flex flex-md-row flex-column ">
+          <div>
+            <p class="text-lg-start text-light light-300 links text-decoration-none">
+              @2026 <a href="https://vizwebsolutions.com/" class="text-decoration-none text-light mx-1 ">Don Bosco
+                International Media Academy . All Rights Reserved.
+            </p>
+          </div>
+          <div class="d-flex links text-decoration-none ms-auto">
+            <span class="text-white">
+              <a href="privacy-policy.html" class="text-decoration-none mx-2">Privacy
+                Policy</a>
+              <a href="terms&conditions.html" class="text-decoration-none mx-2 ">Terms
+                &
+                Condition </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer-links -->
+</footer>
+<script>
+  // -------------------
+  const btn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      btn.classList.add("show");
+    } else {
+      btn.classList.remove("show");
+    }
+  });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+</script>
