@@ -43,7 +43,7 @@ h2 {
 /* header */
 header {
   background: url("assets/images/radiant-bg-1.svg") no-repeat center/cover;
-  padding: 0px 0px 10%;
+  padding: 20px 0px 10%;
 }
 
 header nav {
