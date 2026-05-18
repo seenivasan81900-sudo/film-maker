@@ -1,12 +1,12 @@
 // Load navbar
-fetch('/includes/navbar.html')
+fetch('navbar.html')
     .then(r => r.text())
     .then(html => {
         document.getElementById('navbar-placeholder').innerHTML = html;
     });
 
 // Load menu
-fetch('/includes/menu.html')
+fetch('menu.html')
     .then(r => r.text())
     .then(html => {
         document.getElementById('menu-placeholder').innerHTML = html;
@@ -16,7 +16,7 @@ fetch('/includes/menu.html')
     });
 
     // Load menu
-fetch('/includes/footer.html')
+fetch('footer.html')
     .then(r => r.text())
     .then(html => {
         document.getElementById('footer-placeholder').innerHTML = html;
