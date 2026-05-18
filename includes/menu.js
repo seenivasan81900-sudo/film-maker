@@ -1,84 +1,363 @@
 const academicsLink = document.querySelector(".nav-link.academics");
 
-// Menu data
+// ── Menu Data ────────────────────────────────────────────────────────────────
 const menuData = {
   academics: [
     {
       name: "French Program",
-      content: {
-        text: "BTS Métiers de l’Audiovisuel",
-        url: "https://example.com/french-program",
-      },
+      contents: [
+        {
+          text: "BTS Métiers de l'Audiovisuel",
+          url: "/courses/bts-gestion-de-production.html",
+        },
+        {
+          text: "BTS Métiers de l'Audiovisuel – Montage et Post-production",
+          url: "/courses/bts-metiers-audiovisuel-montage-post-production.html",
+        },
+      ],
     },
     {
       name: "International Program",
-      content: {
-        text: "International program example",
-        url: "https://example.com/international-program",
-      },
+      contents: [
+        {
+          text: "European Bachelor of Arts in Cinema and Audiovisual",
+          url: "/courses/european-bachelor-cinema-audiovisual.html",
+        },
+        {
+          text: "European Master of Arts in Cinema and Audiovisual",
+          url: "/courses/european-master-cinema-audiovisual.html",
+        },
+        {
+          text: "Elite Diploma In Cinema & Television",
+          url: "/courses/elite-diploma-cinema-television.html",
+        },
+      ],
     },
     {
       name: "Short Program",
-      content: {
-        text: "Short Program Details",
-        url: "https://example.com/short-program",
-      },
+      contents: [
+        {
+          text: "ONE-MONTH FILMMAKING PROGRAM",
+          url: "/courses/one-month-filming-program.html",
+        },
+        { text: "Art & Culture", url: "" },
+        { text: "Erasmus Plus PROGRAM", url: "" },
+        { text: "Summer Courses", url: "" },
+      ],
     },
     {
       name: "Online Program",
-      content: {
-        text: "Online Program Details",
-        url: "https://example.com/online-program",
-      },
+      contents: [
+        {
+          text: "Online Scriptwriting for Cinema and Television",
+          url: "/courses/online-scriptwriting-cinema-television.html",
+        },
+      ],
     },
   ],
+
   admissions: [
     {
-      name: "Undergraduate",
-      content: {
-        text: "Undergraduate admissions info",
-        url: "https://example.com/undergraduate",
-      },
+      name: "Admission Guidelines",
+      contents: [
+        {
+          text: "Admission Process",
+          url: "",
+        },
+        {
+          text: "Which Program Is Right For You?",
+          url: "",
+        },
+        {
+          text: "How To Apply?",
+          url: "",
+        },
+        {
+          text: "Selection Process",
+          url: "",
+        },
+        {
+          text: "Important Dates",
+          url: "",
+        },
+      ],
     },
+
     {
-      name: "Postgraduate",
-      content: {
-        text: "Postgraduate admissions info",
-        url: "https://example.com/postgraduate",
-      },
+      name: "International Students",
+      contents: [
+        {
+          text: "Visa Guidance",
+          url: "",
+        },
+        {
+          text: "Post-Arrival Assistance",
+          url: "",
+        },
+        {
+          text: "Arriving On Campus",
+          url: "",
+        },
+      ],
+    },
+
+    {
+      name: "Tuition & Fees",
+      contents: [
+        {
+          text: "All Programs & Courses",
+          url: "",
+        },
+        {
+          text: "Registration",
+          url: "",
+        },
+        {
+          text: "Payment Modules",
+          url: "",
+        },
+        {
+          text: "Payment System",
+          url: "",
+        },
+      ],
+    },
+
+    {
+      name: "Financial Aid & Scholarship",
+      contents: [
+        {
+          text: "Aid & Scholarship Opportunities",
+          url: "",
+        },
+        {
+          text: "Aid & Scholarship Requirements",
+          url: "",
+        },
+        {
+          text: "Win-Win Scholarship Guidelines",
+          url: "",
+        },
+      ],
     },
   ],
   campus: [
     {
-      name: "Library",
-      content: { text: "Library info", url: "https://example.com/library" },
+      name: "Our Students",
+      contents: [
+        {
+          text: "Awards & Recognition",
+          url: "",
+        },
+        {
+          text: "Student Stories",
+          url: "",
+        },
+        {
+          text: "Student Work",
+          url: "",
+        },
+        {
+          text: "Behind The Scenes",
+          url: "",
+        },
+      ],
     },
+
     {
-      name: "Sports",
-      content: { text: "Sports info", url: "https://example.com/sports" },
+      name: "Housing & Accommodation",
+      contents: [
+        {
+          text: "Dbima Housing",
+          url: "",
+        },
+        {
+          text: "Ecla Accommodation",
+          url: "",
+        },
+      ],
+    },
+
+    {
+      name: "Show Your Talent",
+      contents: [
+        {
+          text: "A Chance to Go Pro",
+          url: "",
+        },
+        {
+          text: "Make it Professional",
+          url: "",
+        },
+      ],
+    },
+
+    {
+      name: "Life In Paris",
+      contents: [
+        {
+          text: "Kick start your life in paris",
+          url: "",
+        },
+        {
+          text: "NGO Participation",
+          url: "",
+        },
+        {
+          text: "Arrival Guide",
+          url: "",
+        },
+      ],
     },
   ],
+
   cine: [
     {
-      name: "Film Club",
-      content: { text: "Film club info", url: "https://example.com/film-club" },
+      name: "Grigio Studio",
+      contents: [
+        {
+          text: "Film & Television Production",
+          url: "https://example.com/production-crew-services",
+        },
+      ],
     },
+
     {
-      name: "Screenings",
-      content: {
-        text: "Screenings info",
-        url: "https://example.com/screenings",
-      },
+      name: "Grigio Services",
+      contents: [
+        {
+          text: "Production Crew Services",
+          url: "https://example.com/production-crew-services",
+        },
+      ],
+    },
+
+    {
+      name: "Grigio Rentals",
+      contents: [
+        {
+          text: "Production Rental Services",
+          url: "https://example.com/production-rental-services",
+        },
+      ],
+    },
+
+    {
+      name: "Grigio Scope",
+      contents: [
+        {
+          text: "Pitch Your Idea",
+          url: "https://example.com/pitch-your-idea",
+        },
+        {
+          text: "Co Producer Your Project",
+          url: "https://example.com/co-producer-your-project",
+        },
+        {
+          text: "Launch Your Podcast",
+          url: "https://example.com/launch-your-podcast",
+        },
+        {
+          text: "Chance To Create Your Own Show",
+          url: "https://example.com/create-your-own-show",
+        },
+        {
+          text: "Launch Your 1st Movie",
+          url: "https://example.com/launch-your-1st-movie",
+        },
+      ],
     },
   ],
+
   about: [
     {
-      name: "Our Team",
-      content: { text: "Team info", url: "https://example.com/our-team" },
+      name: "Our Network",
+      contents: [
+        {
+          text: "Inspiring Since 1883 - 1981 - 2019",
+          url: "https://example.com/inspiring-history",
+        },
+        {
+          text: "DBIMA, The New Era",
+          url: "https://example.com/dbima-new-era",
+        },
+        {
+          text: "Don Bosco Network",
+          url: "https://example.com/don-bosco-network",
+        },
+      ],
     },
+
     {
-      name: "Contact",
-      content: { text: "Contact info", url: "https://example.com/contact" },
+      name: "Our Faculty",
+      contents: [
+        {
+          text: "Director",
+          url: "https://example.com/director",
+        },
+        {
+          text: "Team DBIMA",
+          url: "https://example.com/team-dbima",
+        },
+        {
+          text: "Teaching Staff",
+          url: "https://example.com/teaching-staff",
+        },
+      ],
+    },
+
+    {
+      name: "News & Events",
+      contents: [
+        {
+          text: "News",
+          url: "https://example.com/news",
+        },
+        {
+          text: "Events",
+          url: "https://example.com/events",
+        },
+        {
+          text: "Blogs & Articles",
+          url: "https://example.com/blogs-articles",
+        },
+        {
+          text: "Press Release",
+          url: "https://example.com/press-release",
+        },
+        {
+          text: "Upcoming Projects",
+          url: "https://example.com/upcoming-projects",
+        },
+      ],
+    },
+
+    {
+      name: "Our Partners",
+      contents: [
+        {
+          text: "International Collaborators",
+          url: "https://example.com/international-collaborators",
+        },
+        {
+          text: "Erasmus+",
+          url: "https://example.com/erasmus-plus",
+        },
+        {
+          text: "EABHES",
+          url: "https://example.com/eabhes",
+        },
+      ],
+    },
+
+    {
+      name: "Our Ambassadors",
+      contents: [
+        {
+          text: "Ambassadors Around the World",
+          url: "https://example.com/ambassadors-around-the-world",
+        },
+      ],
     },
   ],
 };
@@ -150,7 +429,6 @@ document.querySelectorAll(".menu-wrapper").forEach((wrapper) => {
     wrapper.classList.add("show");
     const academicsLink = document.querySelector(".nav-link.academics");
     academicsLink.style.color = "#B58448";
-    
   });
   wrapper.addEventListener("mouseleave", () => {
     wrapper.classList.remove("show");
@@ -180,6 +458,34 @@ function setupMenu() {
   const newTopItems = panelTop.querySelectorAll("li");
   const middleUl = panelSub.querySelector("ul");
 
+  // ── Render each content  ──────────────────────────
+  function renderContents(contents) {
+    contentText.innerHTML = "";
+    const ul = document.createElement("ul");
+    ul.classList.add("list-unstyled", "p-0", "m-0");
+
+    contents.forEach((c) => {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = c.url;
+      a.target = "_blank";
+
+      a.classList.add(
+        "d-flex",
+        "justify-content-between",
+        "text-decoration-none",
+        "align-items-center",
+      );
+      const span = document.createElement("span");
+      span.textContent = c.text;
+      a.appendChild(span);
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+
+    // Append UL into content area
+    contentText.appendChild(ul);
+  }
   // Desktop hover + mobile click
   newTopItems.forEach((item) => {
     const key = item.dataset.sub;
@@ -204,7 +510,7 @@ function setupMenu() {
     });
   });
 
-  //Desktop sub-menu
+  // Desktop sub-menu
   function populateMiddle(key) {
     middleUl.innerHTML = "";
     let activeIndex = activeSubItems[key] ?? 0;
@@ -212,16 +518,15 @@ function setupMenu() {
     menuData[key].forEach((d, i) => {
       const li = document.createElement("li");
 
-      // Create link with span + icon
       const link = document.createElement("a");
-      link.href = d.content.url;
-      link.target = "_blank";
+      link.href = "#";
       link.classList.add(
         "d-flex",
         "justify-content-between",
         "text-decoration-none",
         "align-items-center",
       );
+      link.addEventListener("click", (e) => e.preventDefault());
 
       const span = document.createElement("span");
       span.textContent = d.name;
@@ -235,21 +540,23 @@ function setupMenu() {
 
       if (i === activeIndex) li.classList.add("active");
 
-      // Desktop hover
+      // Desktop hover — show this sub's contents
       li.addEventListener("mouseenter", () => {
         middleUl
           .querySelectorAll("li")
           .forEach((sib) => sib.classList.remove("active"));
         li.classList.add("active");
         activeSubItems[key] = i;
-        contentText.innerHTML = `<a href="${d.content.url}" target="_blank">${d.content.text}</a>`;
+        contentTitle.textContent = d.name;
+        renderContents(d.contents);
       });
 
       middleUl.appendChild(li);
     });
 
-    const activeContent = menuData[key][activeIndex].content;
-    contentText.innerHTML = `<a href="${activeContent.url}" target="_blank">${activeContent.text}</a>`;
+    // Show default active contents
+    contentTitle.textContent = menuData[key][activeIndex].name;
+    renderContents(menuData[key][activeIndex].contents);
   }
 
   // Reset active sub-item when mouse leaves sub-menu
@@ -263,11 +570,11 @@ function setupMenu() {
     const activeIndex = activeSubItems[key] ?? 0;
     middleUl.querySelectorAll("li")[activeIndex].classList.add("active");
 
-    const activeContent = menuData[key][activeIndex].content;
-    contentText.innerHTML = `<a href="${activeContent.url}" target="_blank">${activeContent.text}</a>`;
+    contentTitle.textContent = menuData[key][activeIndex].name;
+    renderContents(menuData[key][activeIndex].contents);
   });
 
-  //Mobile sub-menu
+  // Mobile sub-menu
   function populateSubMobile(key) {
     subUl.innerHTML = "";
 
@@ -275,8 +582,7 @@ function setupMenu() {
       const li = document.createElement("li");
 
       const link = document.createElement("a");
-      link.href = item.content.url;
-      link.target = "_blank";
+      link.href = "#";
       link.classList.add(
         "d-flex",
         "justify-content-between",
@@ -294,11 +600,11 @@ function setupMenu() {
 
       li.appendChild(link);
 
-      // Mobile click
+      // Mobile click — show content panel with all <li> items
       link.addEventListener("click", (e) => {
         e.preventDefault();
         contentTitle.textContent = item.name;
-        contentText.innerHTML = `<a href="${item.content.url}" target="_blank">${item.content.text}</a>`;
+        renderContents(item.contents);
         panelSub.classList.remove("active");
         panelContent.classList.add("active");
       });

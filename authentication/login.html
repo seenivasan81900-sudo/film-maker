@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/logo.svg" type="image/logo.svg">
+</head>
+
+<style>
+    body {
+        background: url("/authentication/bg-img.svg") no-repeat center/cover;
+    }
+
+    .login-page .form_div {
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right,
+                #0A0500 5%,
+                #B58448 100%) 1;
+        background: #00000066;
+    }
+
+    .login-page .otp-btn {
+        background-color: var(--caramel);
+        color: var(--white);
+    }
+
+    .login-page .otp-btn:hover {
+        background-color: var(--white);
+        color: var(--caramel);
+        border-color: var(--caramel);
+        box-shadow: 2px 2px 15px 8px rgba(0, 0, 0, 0.147);
+    }
+
+    .login-page .form-control {
+        background-color: #19191A;
+
+    }
+
+    .login-page .form-control::placeholder {
+        color: var(--white);
+        font-size: 12px;
+    }
+
+    .login-page .form-control:focus {
+        color: var(--white);
+        border-color: var(--caramel);
+        background-color: transparent !important;
+        box-shadow: 2px 2px 15px 8px rgba(0, 0, 0, 0.147);
+    }
+</style>
+
+<body>
+    <!-- -->
+    <header>
+        <div class="container">
+            <div id="navbar-placeholder"></div>
+            <div id="menu-placeholder"></div>
+        </div>
+    </header>
+    <!-- -->
+    <main>
+        <!-- login -->
+        <section class="login-page py-4" id="enqform">
+            <div class="container d-flex flex-wrap">
+
+                <div class="col-lg-5 mx-auto col-md-10 col-12 py-lg-4 mb-3 my-lg-0">
+                    <div class="mx-auto">
+                        <img src="/authentication/img-1.svg" alt class="img-fluid mx-auto">
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-7 d-flex flex-column align-self-center py-lg-4 px-0 col-md-10 col-12 mx-auto my-lg-4 my-3 my-lg-0">
+
+                    <div class="col-xxl-7 col-xl-8 col-12 mx-auto p-lg-4 p-3 my-lg-0 my-3">
+                        <div class="p-4 mb-5 form_div">
+                            <div class="text-center text-white pb-4">
+                                <h5 class="fw-bold h3 ps-2">Login</h5>
+                                <p>Login to continue working on your form</p>
+                            </div>
+                            <form action="" class="d-flex flex-column" style="font-size: 12px;">
+
+                                <input type="email" placeholder="Enter Your Email ID" class="my-3 form-control p-2"
+                                    required>
+
+
+                                <button class="btn otp-btn my-2 py-2" type="submit">GET OTP <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></button>
+                                <p class="pt-3 pb-1 text-center" style="color:#868A91">*An OTP will be sent to your
+                                    registered email address</p>
+                            </form>
+                        </div>
+                        <p class="text-center text-white">Don't have an account? <a href=""
+                                style="color: var(--caramel);">Register
+                                Now</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- login -->
+    </main>
+    <!-- footer -->
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+    <!-- footer -->
+    <script src="/includes/components.js"></script>
+    <script src="/index.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
